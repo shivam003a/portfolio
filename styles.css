@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    perspective: 20px;
+    overflow-x: hidden;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.hero{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.img{
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+}
+
+.ft{
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.fd{
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    transform: translateZ(150px) scale(150px);
+}
+.mt{
+    top: 0;
+    left: 0;
+    z-index: 7;
+}
+.md{
+    bottom: 0;
+    left: 0;
+    z-index: 7;
+    transform: translateZ(10px) scale(10px);
+
+}
+.bt{
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+.bd{
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+}
+.bg{
+    height: 100%;
+}
+.boy{
+    width: 80px;
+    position: absolute;
+    bottom: 0;
+    left: 12%;
+    z-index: 9;
+    transform: rotateY(180deg);
+    filter: grayscale(100%);
+}
+
+.container{
+    width: 980px;
+    position: absolute;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 1rem;
+}
+
+.left{
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.left h1{
+    font-size: 26px;
+    color: #6abfbe;
+}
+.name{
+    font-size: 60px;
+    color: #6abfbe;
+    padding-top: 6px;
+}
+.dot{
+    color: black;
+    font-size: 60px;
+    padding-left: 3px;
+}
+.left p{
+    font-size: 18px;
+    color: #6abfbe;
+    line-height: 1.2;
+}
+.btn-grp{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.btn-grp a{
+    text-decoration: none;
+    color: #6abfbe;
+}
+.button{
+    width: fit-content;
+    margin-top: 12px;
+    padding: 0.8rem 2rem;
+    font-size: 18px;
+    background-color: black;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #6abfbe;
+}
+.button::before{
+    content: '';
+    position: absolute;
+    background-color: #031e31;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    z-index: -1;
+    transition: all 400ms;
+}
+.button:hover::before{
+    width: 100%;
+    z-index: -1;
+    color: black;
+}
+.scroll{
+    margin-top: 12px;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+.underline{
+    width: 10px;
+    height: 1px;
+    margin-top: 5px;
+    background-color: #6abfbe;
+    transition: all 400ms;
+}
+.scroll:hover .underline{
+    width: 80px;
+}
+.photo{
+    aspect-ratio: 1/1;
+    width: 300px;
+    height: 300px;
+}
+
+
+
+
+
+
+
+
+.about{
+    height: 100vh;
+}
