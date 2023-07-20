@@ -169,6 +169,101 @@
     height: 300px;
 }
 
+@media (max-width: 1200px ) and (min-width : 993px) {
+    .boy{
+        left: 20px;
+    }
+    .container{
+        width: 993px;
+    }
+}
+@media (max-width: 992px ) and (min-width : 769px) {
+    .boy{
+        width: 60px;
+        left: 20px;
+    }
+    .unselectable-text{
+        font-size: 96px;
+    }
+    .container{
+        width: 769px;
+    }
+    .left{
+        width: 55%;
+    }
+    .photo{
+        aspect-ratio: 1/1;
+        width: 250px;
+        height: 250px;
+    }
+}
+@media (max-width: 768px ){
+    .ft{
+        height: 100px;
+    }
+    .fd{
+        height: 100px;
+    }
+    .mt{
+        height: 100px;
+    }
+    .md{
+        height: 100px;
+    }
+    .bt{
+        height: 100px;
+    }
+    .bd{
+        height: 100px;
+    }
+    .bg{
+        height: 100%;
+    }
+    .boy{
+        display: none;
+    }
+    .unselectable-text{
+        font-size: 76px;
+    }
+    .container{
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content:center;
+        padding: 12px;
+        gap: 12px;
+    }
+    .left{
+        width: 100%;
+    }
+    .left h1{
+        padding-top: 12px;
+        font-size: 22px;
+        color: #6abfbe;
+    }
+    .name{
+        font-size: 48px;
+    }
+    .dot{
+        font-size: 48px;
+    }
+    .left p{
+        font-size: 17px;
+        line-height: 1.1;
+    }
+    .button{
+        font-size: 17px;
+    }
+    .photo{
+        width: 200px;
+        height: 200px;
+    }
+    .hide{
+        display: none;
+    }
+}
+
 /* for the about section */
 
 .about{
@@ -225,7 +320,103 @@
 .imp-underline{
     background-color: #6abfbe;
     color: black;
+    padding: 0 2px;
     padding-top: 2px;
+}
+
+@media (max-width: 1200px ) and (min-width : 993px) {
+    .container-about{
+        width: 993px;
+    }
+    .left-about{
+        width: 30%;
+    }
+    .right-about{
+        width: 69%;
+        gap: 14px;
+    }
+    .right-about a{
+        padding: 0.7rem 1rem;
+    }
+    .right-about h2{
+        font-size: 60px;
+    }
+    .right-about p{
+        line-height: 1.1;
+    }
+}
+@media (max-width: 992px ) and (min-width : 769px) {
+    .container-about{
+        width: 769px;
+        gap: 16px;
+    }
+    .left-about img{
+        height: 300px;
+    }
+    .right-about{
+        gap: 12px;
+    }
+    .right-about h2{
+        font-size: 56px;
+    }
+    .right-about p{
+        font-size: 16px;
+        line-height: 1;
+    }
+    .hide{
+        display: none;
+    }
+    .imp-underline{
+        background-color: #000000;
+        color: #6abfbe;
+    }
+}
+@media (max-width: 768px){
+    .about{
+        width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: #000000;
+    }
+    .container-about{
+        width: 100%;
+        min-height: 100%;
+        gap: 16px;
+        padding: 1rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .left-about{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 12px;
+    }
+    .left-about img{
+        width: 200px;
+        height: 200px;
+    }
+    .right-about{
+        width: 100%;
+        gap: 16px;
+        padding-right: 0rem;
+    }
+    .right-about a{
+        padding: 0.8rem 0.8rem;
+    }
+    .btn-share{
+        padding: 16px 0 16px 0;
+    }
+    .right-about h2{
+        font-size: 48px;
+    }
+    .right-about p{
+        font-size: 17px;
+        line-height: 1.2;
+    }
 }
 
 /* for the projects page */
@@ -275,20 +466,209 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: black;
+    /* background-color: black; */
+    background-color: #000000;
 }
 .bg-middle-contact{
     position: absolute;
     top: 0;
     left: 0;
 }
+
 .container-contact{
     width: 1200px;
-    height: 80%;
+    min-height: 80%;
     padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
-.container-contact h2{
-    font-size: 60px;
-    padding-bottom: 20px;
+.left-contact{
+    width: 49%;
     color: #6abfbe;
+}
+.left-contact h2{
+    font-size: 60px;
+    color: #6abfbe;
+    padding-bottom: 3rem;
+}
+.heading-contact{
+    font-size: 24px;
+}
+.para-contact{
+    padding-top: 1.4rem;
+    line-height: 1.2;
+    letter-spacing: 1.2;
+    font-size: 17px;
+    text-align: justify;
+}
+.right-contact{
+    width: 49%;
+}
+.right-contact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 1rem 2rem;
+}
+.right-contact input{
+    padding: 12px 20px;
+    width: 100%;
+    background-color: #6abfbe;
+    border: none;
+    outline: none;
+}
+.right-contact textarea{
+    padding: 12px 20px;
+    width: 100%;
+    background-color: #6abfbe;
+    border: none;
+    resize: none;
+    outline: none;
+}
+.right-contact button{
+    color: #6abfbe;
+    width: fit-content;
+}
+
+@media (max-width: 1200px ) and (min-width : 993px) {
+    .container-contact{
+        width: 993px;
+    }
+}
+@media (max-width: 992px ) and (min-width : 769px) {
+    .container-contact{
+        width: 769px;
+        gap: 16px;
+    }
+    .left-contact h2{
+        font-size: 56px;
+        padding-bottom: 2rem;
+    }
+    .para-contact{
+        padding-top: 1.2rem;
+        line-height: 1.1;
+        letter-spacing: 1;
+        font-size: 16px;
+    }
+    .right-contact form{
+        padding: 1rem 1.5rem;
+    }
+    .right-contact button{
+        color: #6abfbe;
+        width: 100%;
+    }
+}
+@media (max-width: 768px ){    
+    .container-contact{
+        width: 100%;
+        min-height: 100%;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .left-contact{
+        width: 100%;
+    }
+    .left-contact h2{
+        font-size: 48px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .heading-contact{
+        font-size: 22px;
+    }
+    .para-contact{
+        padding-top: 1.2rem;
+    }
+    .right-contact{
+        width: 100%;
+    }
+    .right-contact form{
+        padding: 1rem 0;
+    }
+}
+
+/* for the footer */
+footer{
+    width: 100vw;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #031e30;
+}
+.footer-container{
+    width: 1200px;
+    min-height: 80%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.img-footer{
+    position: absolute;
+    top: -1px;
+    left: 0;
+}
+.left-footer{
+    width: 49%;
+    color: #6abfbe;
+    text-align: end;
+}
+.left-footer p{
+    font-size: 18px;
+}
+.right-footer{
+    width: 49%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.right-footer i{
+    color: #6abfbe;
+}
+.right-footer i:hover{
+    color: #031e30;
+}
+
+@media (max-width: 1200px ) and (min-width : 993px) {
+    .footer-container{
+        width: 993px;
+    }
+}
+@media (max-width: 992px ) and (min-width : 769px) {
+    .footer-container{
+        width: 993px;
+    }
+}
+@media (max-width: 992px ) and (min-width : 769px) {
+    .footer-container{
+        width: 769px;
+    }
+}
+@media (max-width: 768px){
+    .footer-container{
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .left-footer{
+        width: 100%;
+        text-align: center;
+    }
+    .left-footer p{
+        font-size: 17px;
+    }
+    .right-footer{
+        width: 100%;
+        gap: 16px;
+        justify-content: center;
+    }
 }

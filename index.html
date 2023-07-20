@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SimplyShivam Portfolio</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/6a304f927e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -26,9 +27,9 @@
                 <h2 class="name">Shivam Singh<span class="dot">.</span></h2>
                 <p>I am an enthusiastic and passionate fresher with highly motivated technological and leadership skill
                     along
-                    with good communication skill. I am currently looking for a position to showcase my skills and eager
+                    with good communication skill.<span class="hide">I am currently looking for a position to showcase my skills and eager
                     to
-                    learn new technologies.
+                    learn new technologies.</span>
                 </p>
                 <div class="btn-grp">
                     <a href="#" class="button">Resume</a>
@@ -66,7 +67,7 @@
                         class="imp-underline">Node.js</span>, <span class="imp-underline">MongoDB</span>, and <span
                         class="imp-underline">React</span>. From building robust algorithms to creating engaging web
                     experiences, I'm ready to code the future! 🚀💻</p>
-                <p>Thank you for visiting my portfolio! I'm eager to connect with fellow creatives, potential employers, and anyone who shares a love for design.</p>
+                <p class="hide">Thank you for visiting my portfolio! I'm eager to connect with fellow creatives, potential employers, and anyone who shares a love for design.</p>
                 <p>Feel free to reach out to me through the contact form below or connect with me on LinkedIn.
 
                     Let's embark on a visual journey together! 🎨✨</p>
@@ -110,12 +111,39 @@
         <h2 class="unselectable-text">Contact Me</h2>
 
         <div class="container-contact">
-            <h2>Contact Me</h2>
-            <div class="form-container">
-                
+            <div class="left-contact">
+                <h2>Contact Me</h2>
+                <p class="heading-contact">Hello there!</p>
+                <p class="para-contact">Thank you for visiting my portfolio. I'm thrilled to see you taking an interest in my work. If you have any questions, want to discuss potential collaborations, or simply want to say hello, please don't hesitate to get in touch with me.</p>
+                <p class="para-contact">Feel free to drop me a line using the form below, and I'll make sure to get back to you as soon as possible. Your feedback and suggestions are valuable to me, as they help me improve and grow as a professional.</p>
+            </div>
+            <div class="right-contact">
+                <form action="">
+                    <input type="text" placeholder="enter name e.g. Shivam">
+                    <input type="text" placeholder="enter the email e.g. shivam003a@gmail.com">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="enter the msg"></textarea>
+                    <button class="button">Submit</button>
+                </form>
             </div>
         </div>
     </section>
+
+    <footer>
+        <img src="./images/foreground_top.svg" class="img-footer">
+        <div class="footer-container">
+            <div class="right-footer">
+                <i class="fa-brands fa-github fa-2x"></i>
+                <i class="fa-brands fa-linkedin fa-2x"></i>
+                <i class="fa-brands fa-instagram fa-2x"></i>
+                <i class="fa-brands fa-github fa-2x"></i>
+            </div>
+            <div class="left-footer">
+                <p>Made with 💕 by Shivam Singh</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
 </body>
 
 </html>
