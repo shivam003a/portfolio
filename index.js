@@ -1,3 +1,5 @@
+
+// for the image slider
 let slideItem = document.querySelectorAll('.slide-item');
 let prevBtn = document.querySelector('.prevBtn');
 let nextBtn = document.querySelector('.nextBtn');
@@ -28,6 +30,15 @@ prevBtn.addEventListener('click', ()=>{
     }
     index--;
     displayHide();
-    console.log(index);
     slideItem[index].style.display = "flex";
+})
+
+// for moving the boy image
+let boy = document.querySelector(".boy");
+
+
+document.addEventListener('scroll', ()=>{
+    let scroll = scrollY;
+    console.log(scroll);
+    boy.style.left =   `${1.2*scroll}px`;
 })
