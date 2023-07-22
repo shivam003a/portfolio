@@ -1,18 +1,33 @@
-// let slides = document.querySelectorAll('.slide');
-// let prev = document.querySelector('.prev');
-// let next = document.querySelector('.next');
+let slideItem = document.querySelectorAll('.slide-item');
+let prevBtn = document.querySelector('.prevBtn');
+let nextBtn = document.querySelector('.nextBtn');
 
-// slides.forEach((slide,index)=>{
-//     slide.style.left = `${index*100}%`;
-//     console.log(slide)
-//     console.log(index)
-// })
+let index = 0;
 
-// setInterval(()=>{
-//     slides.forEach((slide, index)=>{
-//         let left = parseInt(slide.style.left.replace("%",""));
+const displayHide = ()=>{
+    slideItem.forEach(slide=>{
+        slide.style.display = 'none';
+    })
+}
 
-//         slide.style.transform = `translateX(${left - 100}%)`;
-//         console.log(left)
-//     })
-// },3000)
+displayHide();
+slideItem[0].style.display = 'flex';
+
+nextBtn.addEventListener('click', ()=>{
+    if(index == slideItem.length -1){
+        index = -1;
+    }
+    displayHide();
+    index++;
+    slideItem[index].style.display = "flex";
+})
+
+prevBtn.addEventListener('click', ()=>{
+    if(index == 0){
+        index = slideItem.length; 
+    }
+    index--;
+    displayHide();
+    console.log(index);
+    slideItem[index].style.display = "flex";
+})
