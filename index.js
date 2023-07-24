@@ -6,8 +6,8 @@ let nextBtn = document.querySelector('.nextBtn');
 
 let index = 0;
 
-const displayHide = ()=>{
-    slideItem.forEach(slide=>{
+const displayHide = () => {
+    slideItem.forEach(slide => {
         slide.style.display = 'none';
     })
 }
@@ -15,8 +15,8 @@ const displayHide = ()=>{
 displayHide();
 slideItem[0].style.display = 'flex';
 
-nextBtn.addEventListener('click', ()=>{
-    if(index == slideItem.length -1){
+nextBtn.addEventListener('click', () => {
+    if (index == slideItem.length - 1) {
         index = -1;
     }
     displayHide();
@@ -24,9 +24,18 @@ nextBtn.addEventListener('click', ()=>{
     slideItem[index].style.display = "flex";
 })
 
-prevBtn.addEventListener('click', ()=>{
-    if(index == 0){
-        index = slideItem.length; 
+setInterval(() => {
+    if (index == slideItem.length - 1) {
+        index = -1;
+    }
+    displayHide();
+    index++;
+    slideItem[index].style.display = "flex";
+}, 10000)
+
+prevBtn.addEventListener('click', () => {
+    if (index == 0) {
+        index = slideItem.length;
     }
     index--;
     displayHide();
@@ -37,8 +46,8 @@ prevBtn.addEventListener('click', ()=>{
 let boy = document.querySelector(".boy");
 
 
-document.addEventListener('scroll', ()=>{
+document.addEventListener('scroll', () => {
     let scroll = scrollY;
     console.log(scroll);
-    boy.style.left =   `${1.2*scroll}px`;
+    boy.style.left = `${1.2 * scroll}px`;
 })
