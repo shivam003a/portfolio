@@ -24,15 +24,6 @@ nextBtn.addEventListener('click', () => {
     slideItem[index].style.display = "flex";
 })
 
-setInterval(() => {
-    if (index == slideItem.length - 1) {
-        index = -1;
-    }
-    displayHide();
-    index++;
-    slideItem[index].style.display = "flex";
-}, 10000)
-
 prevBtn.addEventListener('click', () => {
     if (index == 0) {
         index = slideItem.length;

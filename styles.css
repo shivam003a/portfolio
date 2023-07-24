@@ -164,7 +164,7 @@
     width: 80px;
 }
 .photo{
-    aspect-ratio: 1/1;
+    object-fit: cover;
     width: 300px;
     height: 300px;
 }
@@ -289,8 +289,9 @@
     width: 33%;
 }
 .left-about img{
+    width: 350px;
     height: 350px;
-    background-size:cover;
+    object-fit:cover;
 }
 .right-about{
     width: 66%;
@@ -761,6 +762,7 @@ footer{
     align-items: center;
     position: relative;
     background-color: #031e30;
+    overflow: hidden;
 }
 .footer-container{
     width: 1200px;
@@ -794,7 +796,7 @@ footer{
     color: #6abfbe;
 }
 .right-footer i:hover{
-    color: #031e30;
+    color: #8ecef2;
 }
 
 @media (max-width: 1200px ) and (min-width : 993px) {
