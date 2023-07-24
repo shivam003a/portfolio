@@ -575,6 +575,9 @@
     .container-project{
         width: 100%;
     }
+    .bg-black-wavy{
+        height: 100px;
+    }
     .project-title{
         font-size: 48px;
         padding-top: 20px;
@@ -724,6 +727,9 @@
         flex-direction: column;
         gap: 16px;
     }
+    .bg-middle-contact{
+        height: 100px;
+    }
     .left-contact{
         width: 100%;
     }
@@ -809,6 +815,9 @@ footer{
         display: flex;
         flex-direction: column;
         gap: 16px;
+    }
+    .img-footer{
+        height: 100px;
     }
     .left-footer{
         width: 100%;
