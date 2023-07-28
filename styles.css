@@ -559,7 +559,7 @@
 .slide-item:hover .slide-item-desc{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     position: absolute;
     top: 0;
     left: 0;
